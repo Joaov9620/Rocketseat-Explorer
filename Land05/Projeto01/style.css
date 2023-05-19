@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-card-select: #02799D;
+    --text-color:#323238;
+    --bg-body: #ffffff;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--bg-body);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.timer{
+    margin-right: 19.2rem;
+}
+
+.time{
+    color: var(--text-color);
+    font-size: clamp(8rem,6rem + 10vw,12.6rem);
+    display:flex;
+}
+
+.controls{
+    display: flex;
+    gap: 4rem;
+    margin-top: 4.8rem;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    background: var(--bg-body);
+    cursor: pointer;
+}
+
+.sounds{
+    display: grid;
+    gap: 3.2rem;
+    grid-template-areas: "A B" "C D";
+    cursor: pointer;
+}
+
+.sounds div{
+    height: 15.2rem;
+    width: 13.8rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: #E1E1E6;
+    border-radius: 24px;
+}
+
+div .cardColor,
+div .cardColor svg path {
+    background:#02799D;
+    fill: white;
+    
+}
+
+.card01{
+    grid-area: A;
+}
+
+.card02{
+    grid-area: B;
+}
+
+.card03{
+    grid-area: C;
+}
+
+.card04{
+    grid-area: D;
+}
